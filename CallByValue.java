@@ -1,9 +1,11 @@
 package com.java.pass;
+import java.util.Scanner;
 
 public class CallByValue {
 	public static void main(String[] args) {
+		Scanner sc=new Scanner(Sytem.in);
 		int num;
-		num=100;
+		num=sc.nextInt();
 		System.out.println("The value of the number Before passing the method"+num);
 		change(num);
 		System.out.println("The value of the number after passing the method"+num);
